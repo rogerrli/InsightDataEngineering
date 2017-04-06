@@ -1,6 +1,7 @@
 # Some Notes ✏️🗒
 
-This submission was written in Python 3 (3.5.1). 
+This submission was written in Python 3 (3.5.1). This change can also be seen in the run.sh file, as I have explicitly used the command "python3". 
+
 The imported packages are as follows (all of which are standard)
   * os
   * sys
