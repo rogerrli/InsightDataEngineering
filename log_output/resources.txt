@@ -1,0 +1,10 @@
+/history/apollo/apollo-13/images/index.gif
+/images/cdrom-1-95/img0007.jpg
+/news/sci.space.news/140
+/news/sci.space.news/15
+/news/sci.space.news/962
+/payloads/org/bbruckne.jpg
+/shuttle/missions/sts-30/images/89HC316.GIF
+/shuttle/missions/sts-56/sts-56-patch-small.gif
+/software/winvn/faq/WINVNFAQ-III-5.html
+/statistics/1994/Oct/Oct94_archive.html
