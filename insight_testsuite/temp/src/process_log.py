@@ -117,7 +117,7 @@ def print_busiest_time(times, directory):
                 incremented_time = times[i] + timedelta(seconds=j)
                 hour_from_time = incremented_time + timedelta(hours=1)
                 # number of events between incremented_time (same as last event which is i) and hour_from_time
-                hour_index = bisect.bisect(times, hour_from_time, i, times_length)
+                hour_index = bisect.bisect_left(times, hour_from_time, i, times_length)
                 occurrences = hour_index - i
                 if j != 0:
                     occurrences -= 1
