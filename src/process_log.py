@@ -73,7 +73,7 @@ def print_most_active(hosts, directory):
     max_log_file = open(directory, 'w')
     sorted_most_active = []
     for _ in range(0, min(len(hosts), 10)):
-        max_key, max_value = max(hosts.items(), key=lambda p: p[1])
+        max_key, max_value = max(hosts.items(), key=lambda x: x[1])
         sorted_most_active.append([max_value, max_key])
         hosts.pop(max_key)
     sorted_most_active.sort(key=lambda x: x[1])
@@ -91,7 +91,7 @@ def print_most_bandwidth(bandwidths, directory):
     max_bandwidth = []
     iterations = min(len(bandwidths), 10)
     for _ in range(0, iterations):
-        max_key, __ = max(bandwidths.items(), key=lambda p: p[1])
+        max_key, __ = max(bandwidths.items(), key=lambda x: x[1])
         max_bandwidth.append(max_key)
         bandwidths.pop(max_key)
     max_bandwidth.sort()
@@ -117,11 +117,12 @@ def print_busiest_time(times, directory):
                 incremented_time = times[i] + timedelta(seconds=j)
                 hour_from_time = incremented_time + timedelta(hours=1)
                 # number of events between incremented_time (same as last event which is i) and hour_from_time
-                hour_index = bisect.bisect(times, hour_from_time, i, times_length)
+                hour_index = bisect.bisect_left(times, hour_from_time, i, times_length)
                 occurrences = hour_index - i
                 if j != 0:
                     occurrences -= 1
-                if incremented_time not in most_busiest:
+                if not any(incremented_time in sublist for sublist in most_busiest):
+                #if incremented_time not in most_busiest:
                     if occurrences > min_occurrences:
                         most_busiest_length = len(most_busiest)
                         if most_busiest_length < 10:

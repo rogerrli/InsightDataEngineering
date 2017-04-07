@@ -1,10 +1,3 @@
-link097.txdirect.net,13
-ix-or10-06.ix.netcom.com,12
-dynip42.efn.org,11
-port26.annex2.nwlink.com,9
-unicomp6.unicomp.net,9
-205.189.154.54,8
-199.72.81.55,7
-onyx.southwind.net,7
-ppp-nyc-3-1.ios.com,7
-smyth-pc.moorecap.com,7
+199.72.81.55,6
+burger.letters.com,3
+unicomp6.unicomp.net,1

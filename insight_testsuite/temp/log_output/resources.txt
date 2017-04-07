@@ -1,10 +1,3 @@
-/cgi-bin/imagemap/countdown?102,210
-/cgi-bin/imagemap/countdown?103,146
-/cgi-bin/imagemap/countdown?107,144
-/history/apollo/images/apollo-small.gif
-/images/shuttle-patch-logo.gif
-/shuttle/missions/missions.html
-/shuttle/missions/sts-49/mission-sts-49.html
-/shuttle/missions/sts-70/images/KSC-95EC-0711.jpg
-/shuttle/missions/sts-71/movies/sts-71-tcdt-crew-walkout.mpg
-/software/winvn/winvn.html
+/login
+/shuttle/countdown/
+/shuttle/countdown/liftoff.html
